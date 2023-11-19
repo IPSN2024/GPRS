@@ -5,5 +5,12 @@ We have released several pre-trained models and part of the corresponding data f
 
 Some visualization results of GPRS are shown as follows. For demonstration purposes, we provide the imaging results in the dual-potato tubers scenario, the random positions scenario, and the leave-k-out potato tubers scenario, which are representative of underground biomass sensing. Please note that the pixel size of all generated results is 1cm, and the monitored size is configured as 60cm $\times$ 60cm. 
 
+|               | Ground Truth |Predicted Results|
+| ------------- | -------------| -------------   |
+|Dual-potato tubers| | |
+|Random positions| | |
+|Leave-2-out| | |
+|Leave-4-out| | |
+
 
 An intuitive comparison between GPRS and three other prevalent models is shown as follows. For demonstration purposes, we provide 
