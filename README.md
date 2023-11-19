@@ -38,17 +38,25 @@ GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development
 
 ### 2.2 Performance on the unseen potato scenario
 
+The ratio of training potato tubers to testing ones is configured as 8:1, 2:7, 6:3, and 5:4. Meanwhile, we conduct the experiment in two monitored areas with different sizes, including 40cm $\times$ 40cm and 60cm $\times$ 60cm.
+
 <div align=center><img src="Results/Unseen.png" width="90%"></div>
+
+It is evident that our method consistently attains SSIM and UQI scores exceeding 0.95, along with PSNR scores surpassing 28.31 in the monitored area measuring 60cm $\times$ 60cm.
 
 ### 2.3 Evaluation on Soil Moisture Levels
 
 #### 2.3.1 Performance on Various Soils. 
 
+We collect RSS measurements from two distinct soil types characterized by varying levels of soil moisture: 7.10% and 11.20%. In each monitored area with the specified monitored size, the pixel size of the monitored area is fixed at 1𝑐𝑚.
+
 <div align=center><img src="Results/Different_Soils.png" width="30%"></div>
+
 Our approach attains SSIM scores surpassing 0.99, PSNR surpassing 37.13, and UQI surpassing 0.95 for soils with moisture levels of 7.10% and 11.20% across all monitored sizes of
 40cm $\times$ 40cm, 60cm $\times$ 60cm and 100cm $\times$ 100cm.
 
 #### 2.3.2 Performance on Domain Adaptation
+
 The following figures demonstrate the results of the domain adaptation experiment across different soils with different moistures. The x-axis denotes the number of samples employed from the target domain for fine-tuning the pre-trained model. We incrementally increase the number of samples utilized in the fine-tuning process of the pre-trained model. 
 
 <img src="Results/PSNRSoil.png" width="30%">   &emsp; &emsp;  <img src="Results/SSIMSoil.png" width="30%"> &emsp;  &emsp; <img src="Results/ComSoil.png" width="30%" height="200%">
