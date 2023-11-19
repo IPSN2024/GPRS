@@ -7,7 +7,7 @@ Some visualization results of GPRS are shown as follows. For demonstration purpo
 
 |               | Ground Truth |Predicted Results|
 | ------------- | -------------| -------------   |
-|Dual-potato tubers| | |
+|Dual-potato tubers|![](https://github.com/IPSN2024/GPRS/blob/main/Img/double_3.png)|![](https://github.com/IPSN2024/GPRS/blob/main/Img/double_3_g.png) |
 |Random positions| | |
 |Leave-2-out| | |
 |Leave-4-out| | |
