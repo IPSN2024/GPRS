@@ -38,12 +38,15 @@ GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development
 
 ### 2.2 Performance on the unseen potato scenario
 
-<img src="Results/Unseen">
+<div align=center><img src="Results/Unseen.png" width="90%"></div>
 
 ### 2.3 Evaluation on Soil Moisture Levels
 
 #### 2.3.1 Performance on Various Soils. 
 
+<div align=center><img src="Results/Different_Soils.png" width="30%"></div>
+Our approach attains SSIM scores surpassing 0.99, PSNR surpassing 37.13, and UQI surpassing 0.95 for soils with moisture levels of 7.10% and 11.20% across all monitored sizes of
+40cm $\times$ 40cm, 60cm $\times$ 60cm and 100cm $\times$ 100cm.
 
 #### 2.3.2 Performance on Domain Adaptation
 The following figures demonstrate the results of the domain adaptation experiment across different soils with different moistures. The x-axis denotes the number of samples employed from the target domain for fine-tuning the pre-trained model. We incrementally increase the number of samples utilized in the fine-tuning process of the pre-trained model. 
