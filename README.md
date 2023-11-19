@@ -25,8 +25,6 @@ GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development
 - Install PyTorch, as well as other required packages,
   ```python
     pip3 install torch
-    pip3 install install opencv-python
-    pip3 install
     pip3 install scikit-learn
     pip3 install scikit-image
   ```
