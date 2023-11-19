@@ -14,3 +14,5 @@ Some visualization results of GPRS are shown as follows. For demonstration purpo
 As shown, GPRS generates images that accurately demonstrate sizes, shapes and positions. 
 
 An intuitive comparison between GPRS and three other prevalent models is shown as follows. For demonstration purposes, we provide different metrics for comprehensively evaluating results. 
+
+<img src="Results/PSNRSoil.png" width="30%">     <img src="Results/SSIMSoil.png" width="30%">
