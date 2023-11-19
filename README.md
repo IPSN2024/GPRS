@@ -11,5 +11,6 @@ Some visualization results of GPRS are shown as follows. For demonstration purpo
 |Random positions|<div align=center><img src="Img/rotate_0.png" width="50%"></div>  <div align=center><img src="Img/rotate_1.png" width="50%"></div>|<div align=center><img src="Img/rotate_0_n.png" width="50%"></div>  <div align=center><img src="Img/rotate_1_n.png" width="50%"></div>|
 |Leave-4-out| | |
 
+As shown, GPRS generates images that accurately demonstrate sizes, shapes and positions. 
 
-An intuitive comparison between GPRS and three other prevalent models is shown as follows. For demonstration purposes, we provide 
+An intuitive comparison between GPRS and three other prevalent models is shown as follows. For demonstration purposes, we provide different metrics for comprehensively evaluating results. 
