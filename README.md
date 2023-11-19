@@ -34,6 +34,24 @@ The following figures show the results of the domain adaptation experiment acros
 
 When employing the pre-trained model directly, SSIM values for the monitored areas of size 40cm $\times$ 40cm and 60cm $\times$ 60cm are 0.46 and 0.84, respectively, with PSNR values of 19.61 and 17.62. With only six samples used for fine-tuning, the SSIM values for these areas increase to 0.88 and 0.94, while the PSNR values rise to 27.63 and 29.90.  Furthermore, when using 18 samples in the fine-tuning process, the SSIM values for these areas significantly increase to 0.99 and 0.98, while the PSNR values improve to 32.24 and 33.96. The results compared with the baseline method are shown in the last figure,  revealing a 12.19% improvement in SSIM for the monitored area sized at 60cm $\times$ 60cm.
 
+### 3. Prerequisite
+GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development environment using Conda. Execute the following commands to configure the development environment. 
+
+- Create a conda environment called GPRS based on python 3.8, and activate the environment.
+     ```python
+    conda create -n GPRS python=3.8
+    conda activate GPRS 
+    ```
+- Install PyTorch, as well as other required packages,
+  ```python
+    pip3 install torch
+    pip3 install install opencv-python
+    pip3 install
+    pip3 install scikit-learn
+    pip3 install scikit-image
+  ```
+  
+
 
 
 
