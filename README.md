@@ -9,7 +9,6 @@ Some visualization results of GPRS are shown as follows. For demonstration purpo
 | ------------- | -------------| -------------   |
 |Dual-potato tubers|<div align=center><img src="Img/double_3.png" width="50%"></div>  <div align=center><img src="Img/double_4.png" width="50%"></div>|<div align=center><img src="Img/double_3_g.png" width="50%"></div>  <div align=center><img src="Img/double_4_g.png" width="50%"></div>|
 |Random positions|<div align=center><img src="Img/rotate_0.png" width="50%"></div>  <div align=center><img src="Img/rotate_1.png" width="50%"></div>|<div align=center><img src="Img/rotate_0_n.png" width="50%"></div>  <div align=center><img src="Img/rotate_1_n.png" width="50%"></div>|
-|Leave-2-out| | |
 |Leave-4-out| | |
 
 
