@@ -36,27 +36,22 @@ GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development
      unzip dataset.zip -d [GPRS root directory]
      unzip model.zip -d [GPRS root directory]
   ```
-### 2.2  Evaluation on Tuber Size and Shape
 
-#### 2.2.1 Performance on the dual potato tubers scenario
+### 2.2 Performance on the unseen potato scenario
+<img src="Results/Unseen">
+### 2.3 Evaluation on Soil Moisture Levels
 
-#### 2.2.2 Performance on the unseen potato scenario
-
-### 2.3 Evaluation on Unkonwn Locations 
-
-### 2.4 Evaluation on Soil Moisture Levels
-
-#### 2.4.1 Performance on Various Soils. 
+#### 2.3.1 Performance on Various Soils. 
 
 
-#### 2.4.2 Performance on Domain Adaptation
+#### 2.3.2 Performance on Domain Adaptation
 The following figures demonstrate the results of the domain adaptation experiment across different soils with different moistures. The x-axis denotes the number of samples employed from the target domain for fine-tuning the pre-trained model. We incrementally increase the number of samples utilized in the fine-tuning process of the pre-trained model. 
 
 <img src="Results/PSNRSoil.png" width="30%">   &emsp; &emsp;  <img src="Results/SSIMSoil.png" width="30%"> &emsp;  &emsp; <img src="Results/ComSoil.png" width="30%" height="200%">
 
 When directly applying the pre-trained model to evaluate RSS data collected from the target domain, the SSIM values for the monitored areas sized at 40cm $\times$ 40cm and 60cm $\times$ 60cm are 0.58 and 0.86, respectively. The PSNR values for the same monitored are 21.70 and 18.64. However, when utilizing a random subset of just 6 samples, a significant performance enhancement is observed, leading to an SSIM increase of 0.33 in the monitored area with the size of 40cm $\times$ 40cm. and a PSNR increase of 11.32 in the monitored area with a size of 60cm $\times$ 60cm. The results compared with the baseline method are shown in the last figure, showing improvements in SSIM by 10.06% and PSNR by 36.55% in the monitored size at 60cm $\times$ 60cm.
 
-### 2.5 Evaluation on Different Environments
+### 2.4 Evaluation on Different Environments
 The following figures show the results of the domain adaptation experiment across different environments. The x-axis denotes the number of samples employed from the target domain for fine-tuning the pre-trained model. We incrementally increase the number of samples utilized in the fine-tuning process of the pre-trained model. 
 
 <img src="Results/PSNRSoilEn.png" width="30%">   &emsp; &emsp;  <img src="Results/SSIMSoilEn.png" width="30%"> &emsp;  &emsp; <img src="Results/ComEn.png" width="30%" height="200%">
