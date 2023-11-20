@@ -15,7 +15,7 @@ As shown, GPRS generates images that accurately demonstrate sizes, shapes and po
 
 ## Prerequisite and Evaluation
 ### 2.1 Prerequisite
-GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development environment using Conda. Execute the following commands to configure the development environment. 
+GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development environment using Conda. Execute the following commands to configure the development environment. Note that, our pre-trained model and testing dataset for imaging two potato tubers has been provided in [releases](https://github.com/IPSN2024/GPRS/releases/tag/v1.0.0.0). You can directly download them for evaluation. 
 
 - Create a conda environment called GPRS based on python 3.8, and activate the environment.
      ```python
