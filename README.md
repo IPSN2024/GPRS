@@ -1,7 +1,7 @@
 # GPRS
 We introduce GPRS, a data-driven model designed for below-ground biomass sensing. GPRS is capable of sensing the blow-ground biomass, including sizes, shapes and positions, through radio tomographic imaging. We extensively evaluate GPRS's sensing capabilities and validate its effectiveness in multiple scenarios, including multiple underground potato tubers, random positions, different soils with different moisture, leave-k-out potato tubers and domain adaptation(crossing soils and crossing environments). 
 
-We have released several pre-trained models and part of the corresponding data files in releases, which can be used for performance testing. 
+We have released the pre-trained model and part of the corresponding data files in [releases](https://github.com/IPSN2024/GPRS/releases/tag/v1.0.0.0), which can be used for performance testing. 
 
 ## 1. Visualization Results
 Some visualization results of GPRS are shown as follows. For demonstration purposes, we provide the imaging results in the dual-potato tubers scenario, the random positions scenario, and the leave-k-out potato tubers scenario, which are representative of underground biomass sensing. Please note that the pixel size of all generated results is 1cm, and the monitored size is configured as 60cm $\times$ 60cm. 
@@ -15,7 +15,7 @@ As shown, GPRS generates images that accurately demonstrate sizes, shapes and po
 
 ## Prerequisite and Evaluation
 ### 2.1 Prerequisite
-GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development environment using Conda. Execute the following commands to configure the development environment. 
+GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development environment using Conda. Execute the following commands to configure the development environment. Note that, our pre-trained model and testing dataset for imaging two potato tubers has been provided in [releases](https://github.com/IPSN2024/GPRS/releases/tag/v1.0.0.0). You can directly download them for evaluation. 
 
 - Create a conda environment called GPRS based on python 3.8, and activate the environment.
      ```python
