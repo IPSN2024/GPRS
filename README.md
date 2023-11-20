@@ -15,9 +15,9 @@ As shown, GPRS generates images that accurately demonstrate sizes, shapes and po
 
 ## Prerequisite and Evaluation
 ### 2.1 Prerequisite
-GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development environment using Conda. Execute the following commands to configure the development environment. Note that, our pre-trained model and testing dataset for imaging two potato tubers has been provided in [releases](https://github.com/IPSN2024/GPRS/releases/tag/v1.0.0.0). You can directly download them for evaluation. 
+GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development environment using Conda(version: 4.10.3). Execute the following commands to configure the development environment. Note that, our pre-trained model and testing dataset for imaging two potato tubers has been provided in [releases](https://github.com/IPSN2024/GPRS/releases/tag/v1.0.0.0). You can directly download them for evaluation. 
 
-- Create a conda environment called GPRS based on python 3.8, and activate the environment.
+- Create a conda environment called GPRS based on Python 3.8, and activate the environment.
      ```python
     conda create -n GPRS python=3.8
     conda activate GPRS 
@@ -25,14 +25,21 @@ GPRS is implemented with Python 3.8 and PyTorch 1.9.1. We manage the development
 - Install PyTorch, as well as other required packages,
   ```python
     pip3 install torch
+    pip3 install numpy
     pip3 install scikit-learn
     pip3 install scikit-image
   ```
-- Download or git clone the GPRS project. Download and unzip dataset.zip and model.zip in releases to the project directory.
+- Download or git clone the GPRS project from [releases](https://github.com/IPSN2024/GPRS/releases/tag/v1.0.0.0). Download and unzip PretrainedModel.zip, 20231021Samples.zip, and Ground1021.zip in releases to the project directory.
   ```python
-     unzip dataset.zip -d [GPRS root directory]
-     unzip model.zip -d [GPRS root directory]
+     unzip PretrainedModel.zip -d [GPRS root directory]
+     unzip 20231021Samples.zip -d [GPRS root directory]
+     unzip Ground1021.zip -d [GPRS root directory]
   ```
+- Perform the testing process by running Code/Test.py
+```python
+     python3 Code/Test.py
+```
+- The predicted results can be visualized by running Code/visualization.py. Upon executing Code/Test.py, please be advised that the anticipated outcomes and assessment metrics will be archived in the "TestResult" directory. For visualization purposes, feel free to select any file, excluding those with a ".txt" extension. 
 
 ### 2.2 Performance on the unseen potato scenario
 
