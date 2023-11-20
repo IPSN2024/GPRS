@@ -6,17 +6,20 @@ import torch.nn.functional as F
 import torch.optim as optim 
 from dataloader import RTIDataSet
 from torch.utils.data import DataLoader, Dataset
-from network import RadioTomoNet
+from network60 import RadioTomoNet
 from UNet import UNetModel
 from evaluate import LoadFileForEva,ImageDataNormalize
+import os
 
 
-testDataset = RTIDataSet("../DataFile/Test60.txt")
+testDataset = RTIDataSet("../Datafile/Test.txt")
 testloader = DataLoader(dataset=testDataset,batch_size=128,shuffle=False,num_workers=4,pin_memory=True)
 
 if __name__ == "__main__":
-    Radio = torch.load("../PretrainedModel/Radio.pth")
-    UNet = torch.load("../PretrainedModel/UNet.pth")
+    Radio = torch.load("../PretrainedModel/Radio.pth",map_location="cpu")
+    UNet = torch.load("../PretrainedModel/UNet.pth",map_location="cpu")
+    if not os.path.exists("../TestResult/"):
+        os.mkdir("../TestResult/")  
     ssim_sum_u = 0.0
     psnr_sum_u = 0.0
     uqi_sum_u = 0.0
@@ -26,8 +29,8 @@ if __name__ == "__main__":
         UNet.eval()
         for idx,(testdata,testlabel) in enumerate(testloader):
             print(idx)
-            testdata = testdata.cuda()
-            testlabel = testlabel.cuda()
+            #testdata = testdata.cuda()
+            #testlabel = testlabel.cuda()
             res = Radio(testdata)
             res = res.unsqueeze(1)
             res = UNet(res)
